@@ -4,15 +4,6 @@ public class Radio {
     private int stationRadio;
     private int volumeRadio;
 
-    public Radio(int station)
-    {
-        stationRadio = station;
-    }
-
-    public Radio()
-    {
-        stationRadio = 0;
-    }
     public void nextStations () {
         if (stationRadio != 9) {
             stationRadio++;
