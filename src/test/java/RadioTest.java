@@ -242,4 +242,30 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void setNegativeVolumeRadio () {
+        Radio radio = new Radio();
+
+        int expected = 99;
+        radio.setVolumeRadio(expected);
+        radio.setVolumeRadio(-1);
+
+        int actual = radio.getVolumeRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setOutBoundMaxVolumeRadio () {
+        Radio radio = new Radio();
+
+        int expected = 99;
+        radio.setVolumeRadio(expected);
+        radio.setVolumeRadio(101);
+
+        int actual = radio.getVolumeRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
