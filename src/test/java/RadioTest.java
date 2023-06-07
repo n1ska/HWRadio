@@ -26,8 +26,8 @@ public class RadioTest {
     }
     @Test
     public void numberZeroRadio () {
-        Radio radio = new Radio();
-        radio.setStationRadio(5);
+        Radio radio = new Radio(5);
+       // radio.setStationRadio(5);
         radio.setStationRadio(0);
 
         int expected = 0;
