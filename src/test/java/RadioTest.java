@@ -5,17 +5,18 @@ import ru.netology.javaqa.Radio;
 public class RadioTest {
 
     @Test
-    public void numberStationRadio () {
+    public void numberStationRadio() {
         Radio radio = new Radio();
         radio.setStationRadio(1);
 
-         int expected = 1;
-         int actual = radio.getStationRadio();
+        int expected = 1;
+        int actual = radio.getStationRadio();
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void numberNegativeRadio () {
+    public void numberNegativeRadio() {
         Radio radio = new Radio();
         radio.setStationRadio(-1);
 
@@ -24,8 +25,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void numberZeroRadio () {
+    public void numberZeroRadio() {
         Radio radio = new Radio();
         radio.setStationRadio(5);
         radio.setStationRadio(0);
@@ -35,8 +37,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void numberEightRadio () {
+    public void numberEightRadio() {
         Radio radio = new Radio();
         radio.setStationRadio(8);
 
@@ -45,8 +48,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void numberNineRadio () {
+    public void numberNineRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(9);
@@ -56,8 +60,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void numberMoreMaxRadio () {
+    public void numberMoreMaxRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(10);
@@ -69,7 +74,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextNumberStationRadio () {
+    public void nextNumberStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(1);
@@ -80,8 +85,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextZeroStationRadio () {
+    public void nextZeroStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(0);
@@ -92,8 +98,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextEightStationRadio () {
+    public void nextEightStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(8);
@@ -104,8 +111,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextMoreNineStationRadio () {
+    public void nextMoreNineStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(9);
@@ -118,7 +126,7 @@ public class RadioTest {
     }
 
     @Test
-    public void prevStationRadio () {
+    public void prevStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(9);
@@ -129,8 +137,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void prevZeroStationRadio () {
+    public void prevZeroStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(0);
@@ -141,8 +150,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void prevOneStationRadio () {
+    public void prevOneStationRadio() {
         Radio radio = new Radio();
 
         radio.setStationRadio(1);
@@ -155,7 +165,7 @@ public class RadioTest {
     }
 
     @Test
-    public void nextVolumeRadio () {
+    public void nextVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(1);
@@ -166,8 +176,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextZeroVolumeRadio () {
+    public void nextZeroVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(0);
@@ -178,8 +189,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextNinetyNineVolumeRadio () {
+    public void nextNinetyNineVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(99);
@@ -190,8 +202,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void nextOneHundredVolumeRadio () {
+    public void nextOneHundredVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(100);
@@ -204,9 +217,8 @@ public class RadioTest {
     }
 
 
-
     @Test
-    public void prevVolumeRadio () {
+    public void prevVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(1);
@@ -217,8 +229,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void prevZeroVolumeRadio () {
+    public void prevZeroVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(0);
@@ -229,8 +242,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-        @Test
-    public void prevOneHundredVolumeRadio () {
+
+    @Test
+    public void prevOneHundredVolumeRadio() {
         Radio radio = new Radio();
 
         radio.setVolumeRadio(100);
@@ -243,7 +257,7 @@ public class RadioTest {
     }
 
     @Test
-    public void setNegativeVolumeRadio () {
+    public void setNegativeVolumeRadio() {
         Radio radio = new Radio();
 
         int expected = 99;
@@ -256,7 +270,7 @@ public class RadioTest {
     }
 
     @Test
-    public void setOutBoundMaxVolumeRadio () {
+    public void setOutBoundMaxVolumeRadio() {
         Radio radio = new Radio();
 
         int expected = 99;
