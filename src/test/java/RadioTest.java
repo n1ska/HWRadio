@@ -5,6 +5,38 @@ import ru.netology.javaqa.Radio;
 public class RadioTest {
 
     @Test
+    public void checkLastStationNumber() {
+        Radio radio = new Radio(15);
+
+        int expected = 15;
+        int actual = radio.getStationCount();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void checkNextStationNumber() {
+        Radio radio = new Radio(15);
+        radio.setStationRadio(14);
+        radio.nextStations();
+        int expected = 0;
+        int actual = radio.getStationRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void checkPrevStationNumber() {
+        Radio radio = new Radio(15);
+        radio.setStationRadio(0);
+        radio.prevStations();
+        int expected = 14;
+        int actual = radio.getStationRadio();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void numberStationRadio() {
         Radio radio = new Radio();
         radio.setStationRadio(1);
